@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Gllacy</title>
+  <title>GllacyShop</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/styles.css">
@@ -11,31 +11,64 @@
 
 <body>
   <header class="header">
-    <div class="container">
-      <nav class="header-nav">
-        <ul>
-          <li><a class="main-logo" href="#"><img src="img/logo.png" alt="Главная"></a></li>
-          <li><a href="#">Каталог</a></li>
-          <li><a href="#">Доставка и оплата</a></li>
-          <li><a href="#">О компании</a></li>
-        </ul>
-      </nav>
 
-      <div class="header-right">
-        <ul>
-          <li><div class="header-search" > 
-            <form class="shadow" action=""><input placeholder="Что ищем?" name="search" type="text"><input class="visually-hidden" type="submit"></form>
-          </div></li>
-          <li><div class="header-enter" >
-            <form  class="shadow" action=""><input type="text" placeholder="Электронная почта" name="e-mail"> <input type="text" placeholder="Пароль"> <button class="buttons "></button> </form>
-          Вход
-          </div></li>
-          <li><div class="header-cart" >Пусто</div></li>
-        </ul>
+    <a class="main-logo" href="#"><img src="img/logo.png" alt="Главная"></a>
+    <nav class="header-nav">
+      <ul>
+        <li>
+          <div class="header-catalog"><a class="header-catalog-main" href="catalog.html">Каталог</a>
+            <ul class="shadow">
+              <li><a href="#">Новинки</a></li>
+              <li><a href="#">Сливочное</a></li>
+              <li><a href="#">Щербет</a></li>
+              <li><a href="#">Фруктовый лед</a></li>
+              <li><a href="#">Мелорин</a></li>
+            </ul>
+          </div>
+        </li>
+        <li><a href="#">Доставка и оплата</a></li>
+        <li><a href="#">О компании</a></li>
+      </ul>
+    </nav>
 
-      </div>
-      <div class="container">
+    <div class="header-right">
+      <ul>
+        <li>
+          <div class="header-search">
+            <form class="shadow" action=""><input placeholder="Что ищем?" name="search" type="text"><input
+                class="visually-hidden" type="submit"></form>
+          </div>
+        </li>
+        <li>
+          <div class="header-enter">
+            <form class="shadow" action="">
+              <input type="text" placeholder="Электронная почта" name="e-mail">
+              <input type="text" placeholder="Пароль">
+              <button class="shadow button--enter">Войти</button>
+              <ul>
+                <li><a class="header-enter-pass" href="#">Забыли пароль?</a></li>
+                <li><a class="header-enter-reg" href="#">Новая регистрация</a></li>
+              </ul>
+            </form>
+            Вход
+          </div>
+        </li>
+        <li>
+          <div class="header-cart">Пусто</div>
+        </li>
+      </ul>
+      <span class="header-time">С 10 до 20, ежедневно</span>
+      <a href="tel:88124502525" class="header-tel">8 812 450-25-25</a>
+
   </header>
+
+  <main class="content">
+
+    <section class="main-slider">
+      <h3>Крем-брюле и пломбир <br> с малиновым джемом</h3>
+      <button>Давайте оба!</button>
+
+  </main>
 </body>
 
 </html>
