@@ -498,6 +498,7 @@ html {
     margin: 0;
     text-decoration: none;
     height: 340px;
+    margin-bottom: 26px;
 }
 
 .main-items li {
@@ -522,4 +523,9 @@ html {
     top: 283px;
     text-align: center;
     color: #ffffff;
+}
+
+.main-shop {
+    height: 308px;
+    background-image: url(../img/wafer.png);
 }
