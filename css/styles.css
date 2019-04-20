@@ -4,6 +4,10 @@ body {
     font-family: 'Roboto', Arial, sans-serif;
     color: #ffffff;
     background-color: #849d8f;
+    
+}
+
+.container {
     width: 1200px;
     padding-right: 27px;
     padding-left: 27px;
@@ -527,6 +531,9 @@ html {
     color: #ffffff;
 }
 
+.main-items-item a:hover {
+    color: #ffbc9e;
+}
 
 .main-items-item--hit {
     position: relative;
@@ -562,6 +569,7 @@ html {
 .main-shop {
     height: 308px;
     background-image: url(../img/wafer.png);
+    background-repeat: no-repeat;
     margin-bottom: 39px;
 }
 
@@ -663,6 +671,10 @@ html {
     font-weight: bold;
 }
 
+.main-news a:hover p {
+    color: #e84d37;
+}
+
 .main-news li:first-child {
     background-image: url(../img/strawberry.png);
     background-repeat: no-repeat;
@@ -705,4 +717,183 @@ html {
     position: absolute;
     bottom: 34px;
     right: 20px;
+}
+
+
+.main-map {
+    margin-top:40px;
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 1200px;
+    height: 430px;
+    background-image: url(../img/map.png);
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+}
+
+.main-map-adress {
+    display: block;
+    position: absolute;
+    width: 304px;
+    height: 304px;
+    background-color: #fffffe;
+    right: 27px;
+    top: 64px;
+    border-radius: 15px;
+}
+
+.main-map-adress p {
+    margin: 0;
+   padding-left: 35px;
+   padding-top: 20px;
+   line-height: 20px;
+    font-size: 14px;
+    font-weight: normal;
+    color: #000000;
+    text-decoration: none;
+}
+
+.main-map-adress span {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 24px;
+    
+}
+
+.main-map-adress a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.main-map-adress button {
+    height: 46px;
+    width: 254px;
+    border-radius: 23px;
+    position: absolute;
+    right: 27px;
+    bottom: 30px;
+}
+
+.footer {
+    height: 105px;
+}
+
+.footer-social-networks {
+    display: flex;
+    list-style: none;
+    width: 200px;
+    height: 105px;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+.footer-social-networks li {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.footer-social-networks li a {
+    display: block;
+    font-size: 0;
+    line-height: 0;
+    width: 38px;
+    height: 38px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: relative;
+}
+
+.footer-social-networks li:first-child a {
+    background-image: url(../img/social_networks/twitter.png);
+}
+
+.footer-social-networks li:nth-child(2) a {
+    background-image: url(../img/social_networks/insta.png);
+}
+
+.footer-social-networks li:nth-child(3) a {
+    background-image: url(../img/social_networks/fb.png);
+}
+.footer-social-networks li:nth-child(4) a {
+    background-image: url(../img/social_networks/vk.png);
+}
+
+.footer-documents {
+    display: flex;
+    list-style: none;
+    width: 340px;
+    height: 45px;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+    position: absolute;
+    left: 425px;
+    top: 30px;
+}
+
+.footer-documents li {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: left;
+    width: 170px;
+}
+
+.footer-documents li a {
+    text-decoration: underline;
+    font-size: 13px;
+    font-weight: normal;
+    color: #ffffff;
+}
+
+.footer-documents li:first-child a {
+    font-weight: bold;
+}
+
+.footer-documents li:first-child::before {
+    content: '';
+    display: block;
+    height: 15px;
+    width: 13px;
+    background-image: url(../img/footer-heart.png);
+    position: absolute;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    left: -20px;
+}
+
+.footer-copyright {
+    position: absolute;
+    right: 27px; 
+    top: 65px;
+    font-size: 12px;
+}
+
+.footer-copyright a {
+    text-decoration: underline;
+    color: #ffffff;
+}
+
+.footer-copyright::before {
+    content: '';
+    display: block;
+    height: 39px;
+    width: 108px;
+    background-image: url(../img/copyright.png);
+    position: absolute;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: -45px;
+}
+
+.footer a:hover {
+    color: #ffbc9e;
 }
