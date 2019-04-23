@@ -4,7 +4,6 @@ body {
     font-family: 'Roboto', Arial, sans-serif;
     color: #ffffff;
     background-color: #849d8f;
-    transition: all 300ms;
 }
 
 fieldset {
@@ -864,16 +863,32 @@ html {
     background-image: url(../img/social_networks/twitter.png);
 }
 
+.footer-social-networks li:first-child a:hover {
+    background-image: url(../img/social_networks/twitter-hover.png);
+}
+
 .footer-social-networks li:nth-child(2) a {
     background-image: url(../img/social_networks/insta.png);
+}
+
+.footer-social-networks li:nth-child(2) a:hover {
+    background-image: url(../img/social_networks/insta-hover.png);
 }
 
 .footer-social-networks li:nth-child(3) a {
     background-image: url(../img/social_networks/fb.png);
 }
 
+.footer-social-networks li:nth-child(3) a:hover {
+    background-image: url(../img/social_networks/fb-hover.png);
+}
+
 .footer-social-networks li:nth-child(4) a {
     background-image: url(../img/social_networks/vk.png);
+}
+
+.footer-social-networks li:nth-child(4) a:hover {
+    background-image: url(../img/social_networks/vk-hover.png);
 }
 
 .footer-documents {
@@ -1306,4 +1321,91 @@ html {
 .catalog-filter-submit input:active {
     background-color: #eaeaea;
     box-shadow: inset 0px 2px 1px 0px rgba(105, 105, 105, 0.4);
+}
+
+.main-popup-form {
+    position:fixed;
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+    background-color: #f8f7f4;
+    border-radius: 15px;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
+}
+
+.main-popup-form fieldset {
+    width: 430px;
+    height: 390px;
+    margin: 25px;
+    padding: 0px;
+}
+
+.main-popup-form input{
+    width: 270px;
+    height: 42px;
+    font-size: 16px;
+    border: 1px solid #d3d3d2;
+    border-radius: 3px;
+    padding-left: 12px;
+    margin-bottom: 18px;
+}
+
+.main-popup-form legend {
+    color: #000000;
+    font-size: 24px;
+    margin-bottom: 25px;
+}
+
+.button-form {
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 18px;
+    height: 17px;
+    background-image: url(../img/X-big.png);
+}
+
+.main-popup-text {
+    width: 430px;
+    height: 154px;
+    padding-left: 12px;
+    padding-top:12px;
+    border: 1px solid #d3d3d2;
+    border-radius: 3px;
+    font-size: 16px;
+}
+
+.main-popup-form .popup-button-submit {
+    width: 140px;
+    height: 46px;
+    border-radius: 23px;
+    position: absolute;
+    right: 30px;
+    bottom: 0;
+}
+
+.page-overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    background-color: rgba(0,0,0,0.5);
+    opacity: 0;
+    visibility: hidden;
+}
+.page-overlay-visible {
+    opacity: 1;
+    visibility: visible;
+}
+
+.main-popup-form-visible {
+    opacity: 1;
+    visibility: visible;
 }
